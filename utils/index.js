@@ -56,3 +56,6 @@ exports.sendTicket = async (data) => {
     return { success: false, error };
   }
 };
+exports.isNumber = (str) => {
+  return !isNaN(str) && str.trim() !== "";
+}
